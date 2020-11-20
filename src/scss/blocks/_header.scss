@@ -1,0 +1,110 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 31px;
+    &__menu{
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        
+    }
+    &__item{
+        list-style: none;
+        margin-right: 24px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    &__link{
+        color: #050c42;
+        font-size: 12px;
+        font-weight: 500;
+        text-decoration: none;
+    }
+    &__howto{
+        margin-top: 4px;
+        color: #13b17c;
+        font-size: 12px;
+        font-weight: 500;
+        text-decoration: none;
+    }
+}
+
+.hamburger{
+    display: none;
+}
+
+@media (max-width: 992px){
+    .header{
+        &__item{
+            margin-right: 12px;
+            &:last-child{
+                margin-right: 12px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .header{
+        &__menu{
+            position: fixed;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           top: 0;
+           left: -100%;
+           width: 50%;
+           height: 100vh;
+           padding: 20px 15px;
+           background-color: rgba(0, 0, 0, .8 );
+           transition: 0.6s all;
+           z-index: 5;
+           &_active{
+                left: 0;
+           }
+        }
+        &__item{
+            padding-right: 0;
+            border: none;
+            margin: 10px 0;
+        }
+        &__link{
+            font-size: 20px;
+            color:#fff;
+        }
+    }
+    .hamburger{
+        display: block;
+        /* position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%); */
+        margin-top: 5px;
+        width: 26px;
+        height: 12px;
+        span{
+           display: block;
+           height: 2px; 
+           width: 100%;
+           background-color: black;
+           margin-bottom: 2px;
+           transition: 0.6s all;
+        }
+        &_active{
+            span{
+                margin-bottom: -2px;
+                &:nth-child(1){
+                    transform: translateY(3px) rotate(-45deg);
+                }
+                &:nth-child(2){
+                    display: none;
+                } 
+                &:nth-child(3){
+                    transform: translateY(3px) rotate(45deg);
+                }  
+            }
+       } 
+    }
+}

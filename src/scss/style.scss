@@ -1,0 +1,22 @@
+@import'blocks/promo';
+@import'blocks/header';
+@import'blocks/slider';
+@import'blocks/catalog';
+@import'blocks/offers';
+
+
+*{
+    font-family: 'Formular', sans-serif;
+}
+
+.container{
+    position: relative;
+    max-width: 1680px;
+    margin: 0 auto;
+}
+
+.icon{
+    display: block;
+    width: 26px;
+    height: 26px;
+}

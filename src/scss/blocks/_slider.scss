@@ -1,0 +1,127 @@
+.slider{
+    /* display: flex;
+    justify-content: center; */
+    position: relative;
+    margin-top: 32px;
+    &__item{
+        width: 445px;
+        height: 250px;
+        border-radius: 13px;
+        position: relative;
+        &_1{
+            background-color: #b6e9c4;
+        }
+        &_2{
+            background-color: #f6d6fe;
+        }
+        &_3{
+            background-color: #8fe8ff;
+        }
+        &_4{
+            background-color: #ffc1a6;
+        }
+    }
+    &__title{
+        max-width: 245px;
+        position: relative;
+        padding-top: 25px;
+        padding-left: 29px;
+        font-weight: 700;
+        font-size: 24px;
+        color: #050C42;
+        z-index: 10;
+        line-height: 29px;
+    }
+    &__bg{
+        position: absolute;
+        background: rgba(0, 0, 0, 0.06);
+        top: 0px;
+        left: 166px;
+        border-radius: 13px;
+        z-index: 0;
+        &_1{
+            background-color: #B6E9C4;
+        }
+        &_2{
+            background-color: #F6D6FE;
+        }
+        &_3{
+            background-color: #8FE8FF;
+        }
+        &_4{
+            background-color: #FFC1A6;
+        }
+    }
+    &__img{
+        position: absolute;
+        border-radius: 13px;
+        &_1{
+            width: 236px;
+            height: 175px;
+            left: 209px;
+            top: 75px;
+        }
+        &_2{
+            width: 203px;
+            height: 149px;
+            left: 242px;
+            top: 66px;
+        }
+        &_3{
+            width: 236px;
+            height: 140px;
+            left: 209px;
+            top: 72px;
+        }
+    }
+    &__link{
+        position: absolute;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        left: 27px;
+        top: 202px;
+        a{
+            text-decoration: none;
+            color: #050c42;
+        }
+    }
+    &__switch{
+        position: absolute;
+        padding-left: 12px;
+        padding-bottom: 33px;
+        height: 12px;
+        width: 7.409999847412109px;
+        top: 20%;
+    }
+    &__prev{
+        display: flex;
+        position: absolute;
+        left: 31px;
+        top: 90px;
+        justify-content: center;
+        width: 64px;
+        height: 64px;
+        background-color: #ffffff;
+        opacity: 0.8;
+        border-radius: 50px;
+    }
+    &__next{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        right: 31px;
+        top: 90px;
+        width: 64px;
+        height: 64px;
+        background-color: #ffffff;
+        opacity: 0.8;
+        border-radius: 50px;
+    }
+    &__icon{
+        width: 16px;
+        &_left{
+           transform: rotate(180deg);
+       }   
+   }
+}
